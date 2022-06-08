@@ -1,11 +1,9 @@
-import mongoose, { Schema } from "mongoose";
+import mongoose from "mongoose";
 
-const reportSchema = new Schema({
-    location: {
-        type: [Number],
-        required: true,
-    },
-    time: new Date(),
+const reportSchema = new mongoose.Schema({
+    lat: Number,
+    lng: Number,
+    desc: String,
 });
 
 export default mongoose.model("Reports", reportSchema);
