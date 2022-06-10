@@ -43,12 +43,9 @@ export default {
     },
     async mounted() {
         try {
-            console.log("this is runnning");
             const location = await axios.post(this.GOOGLEAPI);
-            console.log(location);
             this.lat = location.data.location.lat;
             this.lng = location.data.location.lng;
-            console.log(`${this.lat}, ${this.lng}`);
         } catch (error) {
             console.log(error);
         }
