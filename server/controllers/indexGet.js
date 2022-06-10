@@ -1,3 +1,3 @@
 export const indexGet = (req, res) => {
-    res.send("Hello Wolrd!");
+    res.send("index.html");
 };
