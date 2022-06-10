@@ -1,3 +1,3 @@
 export const indexGet = (req, res) => {
-    res.send("index.html");
+    res.sendFile("index.html");
 };
