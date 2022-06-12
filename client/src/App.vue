@@ -8,4 +8,10 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+#app {
+    border: solid;
+    background-color: #333333;
+    height: 100vh;
+}
+</style>
