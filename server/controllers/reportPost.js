@@ -2,11 +2,14 @@ import Report from "../models/Report.js";
 
 export const reportPost = async (req, res) => {
     try {
-        console.log(req.body);
+        console.log(req.file);
+        const filename = req.file.filename;
+
         const newReport = new Report({
             lat: req.body.lat,
             lng: req.body.lng,
             desc: req.body.desc,
+            file: filename,
         });
 
         const report = await newReport.save();
