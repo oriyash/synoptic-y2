@@ -5,7 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon index"
+    "start": "nodemon index",
+    "demo": "node index"
   },
   "author": "Group 59",
   "license": "ISC",

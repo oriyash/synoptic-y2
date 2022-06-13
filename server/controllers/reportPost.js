@@ -2,7 +2,7 @@ import Report from "../models/Report.js";
 
 export const reportPost = async (req, res) => {
     try {
-        console.log(req.file);
+        console.log(req.body);
         const filename = req.file.filename;
 
         const newReport = new Report({
