@@ -115,11 +115,12 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 form {
     display: block;
     width: 30%;
     border: solid;
+    border-color: var(--bs-success);
     background-color: var(--bs-light);
     border-radius: 5px;
 }

@@ -11,7 +11,7 @@ export default {
 <style>
 #app {
     border: solid;
-    background-color: #333333;
+    background-color: var(--bs-success);
     height: 100vh;
 }
 </style>

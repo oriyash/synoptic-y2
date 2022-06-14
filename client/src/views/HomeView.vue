@@ -22,10 +22,10 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .d-flex {
     border: solid;
-    background-color: var(--bs-success);
+    background-color: #333333;
     border-radius: 15px;
     justify-content: center;
 }
