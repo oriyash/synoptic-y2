@@ -1,21 +1,19 @@
 <template>
-    <div class="text-light">
-        <Admin v-if="admin" />
+    <div class="text-dark">
+        <Admin v-if="store.admin" />
         <NoAdmin v-else />
-        <button class="btn btn-success" @click="auth()">
-            {{ admin ? "Log Out" : "Login" }}
-        </button>
     </div>
 </template>
 
 <script>
 import Admin from "@/components/Admin.vue";
 import NoAdmin from "@/components/NoAdmin.vue";
+import { AdminStore } from "@/store/store.js";
 
 export default {
     data() {
         return {
-            admin: null,
+            store: AdminStore(),
         };
     },
     components: {

@@ -28,8 +28,19 @@
 </template>
 
 <script>
+import { AdminStore } from "@/store/store.js";
+import { mapActions } from "pinia";
+
 export default {
     name: "NoAdmin",
+    data() {
+        return {
+            pword: "",
+        };
+    },
+    methods: {
+        ...mapActions(AdminStore, ["onSubmit"]),
+    },
 };
 </script>
 
