@@ -22,11 +22,6 @@ export default {
         Admin,
         NoAdmin,
     },
-    methods: {
-        auth() {
-            this.admin ? (this.admin = false) : (this.admin = true);
-        },
-    },
 };
 </script>
 
