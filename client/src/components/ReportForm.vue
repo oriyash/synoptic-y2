@@ -29,7 +29,6 @@
                 class="form-control"
                 type="text"
                 :value="lat ? `Latitude: ${lat}` : 'Could not get Latitude'"
-                name="lat"
                 disabled
             />
         </div>
@@ -38,7 +37,6 @@
                 class="form-control"
                 type="text"
                 :value="lng ? `Longitude: ${lng}` : 'Could not get Longitude'"
-                name="lng"
                 disabled
             />
         </div>
@@ -86,6 +84,9 @@ export default {
                     const formData = new FormData(
                         document.querySelector("form")
                     );
+
+                    formData.append("lat", this.lat);
+                    formData.append("lng", this.lng);
 
                     const res = await axios.post(
                         "http://localhost:5000/report",

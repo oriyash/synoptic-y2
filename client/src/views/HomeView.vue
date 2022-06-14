@@ -1,7 +1,7 @@
 <template>
     <div class="d-flex flex-column m-2 p-3">
         <div>
-            <router-link to="/admin" class="btn btn-warning"
+            <router-link to="/admin" class="btn btn-danger"
                 >I am an admin</router-link
             >
         </div>

@@ -2,10 +2,10 @@ import mongoose from "mongoose";
 
 const reportSchema = new mongoose.Schema(
     {
-        lat: Number,
-        lng: Number,
-        desc: String,
-        file: String,
+        lat: { type: Number, required: true },
+        lng: { type: Number, required: true },
+        desc: { type: String, required: true },
+        file: { type: String, required: true },
     },
     { timestamps: true }
 );
