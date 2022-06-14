@@ -9,6 +9,7 @@ import mongoose from "mongoose";
 // importing routes
 import reportRouter from "./routes/report.js";
 import indexRouter from "./routes/index.js";
+import adminRouter from "./routes/admin.js";
 
 // app init
 const app = express();
@@ -33,6 +34,7 @@ app.use(express.static("../client/dist"));
 // routes
 app.use("/", indexRouter);
 app.use("/report", reportRouter);
+app.use("/admin", adminRouter);
 
 // listen
 app.listen(PORT, () => {
